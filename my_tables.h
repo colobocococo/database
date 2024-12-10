@@ -34,3 +34,10 @@ const string mor_e = ">=";
 const string eq = "==";
 const string neq = "!=";
 
+set <string> operators = {les, mor, les_e, mor_e, eq, neq};
+set <string> operations = {"+", "-", "%", "/", "*"};
+
+void cut_begin(string & a) {
+    a = a.substr(1);
+}
+
