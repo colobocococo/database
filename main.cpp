@@ -1,17 +1,21 @@
-#include "my_tables.h"
+#include "database.cpp"
 
 using namespace std;
 
-
-//create table users (id: int, login: string)
-//insert (, 9, "coloboc343") to users
-//insert (, 7, "ColobocLSR") to users
-//delete users where id < 9;
-//select id from users where id < 10;
+//creAte table users (id: int, login: string, bytes: bytes, is_there: bool)
+//iNsErt (, 9, "coloboc343", 0x357644, true) to users
+//iNsERt (, 7, "ColobocLSR", 0x557544, false) to users
+//deletE users where id < 9;
+//seleCT id, is_there from users where id < 8 || is_there == false;
+//select login from users where login == "coloboc + 343";
+//delete users where login == "coloboc + 343";
+//creAte table users (id: int, login: string, bytes: bytes, is_there: bool)
+//iNsErt (, 9, "coloboc343", 0x357644, true) to users
+//iNsERt (, 7, "ColobocLSR", 0x557544, false) to users
+//delete users where |login| == |"coloboc666"|
 void solve () {
     int tm = 4;
     while (tm--) check();
-    show();
 }
 
 int main() {
