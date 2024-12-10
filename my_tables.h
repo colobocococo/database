@@ -21,12 +21,14 @@ using namespace std;
 #define all(s) s.begin(), s.end()
 #define back() end()[-1]
 
+//symbols
 const char bracket_close = ')';
 const char bracket_open = '(';
 const char figure_close = '}';
 const char figure_open = '{';
 const char ask_close = ';';
 
+//operators
 const string les = "<";
 const string mor = ">";
 const string les_e = "<=";
@@ -36,8 +38,3 @@ const string neq = "!=";
 
 set <string> operators = {les, mor, les_e, mor_e, eq, neq};
 set <string> operations = {"+", "-", "%", "/", "*"};
-
-void cut_begin(string & a) {
-    a = a.substr(1);
-}
-
